@@ -24,6 +24,24 @@
   apt remove {PACKAGE NAME}
 ```
 
+## Basic Commands
+```shell
+  # Show the current user
+  whoami
+
+  # Print message
+  echo hello
+
+  # Print current dir
+  echo $0
+
+  # History of latests commands
+  history
+
+  # Clear shell
+  clear
+```
+
 ## Linux File Sistem
 
 * Windows: C:\{PATH}  (ROOT = C:\)
@@ -79,25 +97,7 @@
   rm -r {FOLDER NAME}
 ```
 
-## Basic Commands
-```shell
-  # Show the current user
-  whoami
-
-  # Print message
-  echo hello
-
-  # Print current dir
-  echo $0
-
-  # History of latests commands
-  history
-
-  # Clear shell
-  clear
-```
-
-## Nano Package (text editor)
+## Edit files with Nano package
 ```shell
   # Install nano package
   apt install nano
@@ -107,4 +107,14 @@
 
   # CTRL + O = Save file
   # CTRL + X = Exit
+
+  # Show ALL file content
+  cat {FILE NAME}
+
+  cat /etc/debconf.conf
+
+  # Show PART OF file content
+  more {FILE NAME}
+
+  more /etc/debconf.conf
 ```

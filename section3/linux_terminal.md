@@ -155,3 +155,12 @@
 
   find -type f -name "hel*"
 ```
+
+## Run multiple commands
+```shell
+  # Run multiple commands with ";" operator
+  mkdir example ; cd example ; echo ok
+  
+  # Stop if there is an error when executing multiple commands with the "&&" operator
+  mkdir example && cd example && echo ok
+```

@@ -1,5 +1,4 @@
 ## Create Container
-
 ```shell
   # Creating Ubuntu container in INTERACTIVE MODE (without image download)
 
@@ -54,7 +53,6 @@
 * [see more here](https://www.thegeekstuff.com/2010/09/linux-file-system-structure/)
 
 #### Folders Navigation
-
 ```shell
   # List folders and files of current directory
   ls
@@ -65,11 +63,13 @@
 
   ls -l # More info
 
+  ls -a # Show hidden folders
+
   # Show path of current folder
   pdw
 
   # Change directory
-  cd {FOLDER NAME}
+  cd {DIRECTORY NAME}
   
   cd ../..
 
@@ -77,13 +77,12 @@
 ```
 
 #### Create, Edit or Remove Folders and Files
-
 ```shell
   # Create folder (directory)
-  mkdir {FOLDER NAME}
+  mkdir {DIRECTORY NAME}
 
   # Rename or Move directory
-  mv {FOLDER NAME} {NEW FORDER NAME}
+  mv {DIRECTORY NAME} {NEW FORDER NAME}
 
   # Create file
   touch {FILE NAME} {FILE NAME 2} ... {FILE NAME N}
@@ -94,7 +93,7 @@
   rm example* # Remove everything that starts with "example"
 
   # Remove directory
-  rm -r {FOLDER NAME}
+  rm -r {DIRECTORY NAME}
 ```
 
 ## Edit files with Nano package
@@ -117,14 +116,20 @@
   more {FILE NAME}
 
   more /etc/debconf.conf
+```
 
+## Concatenation
+```shell
   # Concat content of files
   cat {FILE NAME 1} ... {FILE NAME N} > {FILE NAME WITH CONCATENATIONS}
 
   echo {TEXT} > {FILE NAME}
 
   echo hello world > hello.txt
+```
 
+## Regex with GREP
+```shell
   # Finding word or sentence on the file (regex)
   grep {TEXT} {FILE NAME 1} ... {FILE NAME N}
 
@@ -133,4 +138,20 @@
   grep hello -i -r . # All of files from current folder
 
   # See more in https://www.digitalocean.com/community/tutorials/grep-command-in-linux-unix
+```
+
+## Find files
+```shell
+  # Find files from directory (or current directory)
+  find {DIRECTORY OR FILE NAME}
+  
+  find {DIRECTORY OR FILE NAME} -type f # Only files
+  
+  find {DIRECTORY OR FILE NAME} -type d # Only directories
+
+  find /etc/
+
+  find -type f -name "{FILE NAME}"
+
+  find -type f -name "hel*"
 ```

@@ -140,7 +140,7 @@
   # See more in https://www.digitalocean.com/community/tutorials/grep-command-in-linux-unix
 ```
 
-## Find files
+## Find Files
 ```shell
   # Find files from directory (or current directory)
   find {DIRECTORY OR FILE NAME}
@@ -165,7 +165,7 @@
   mkdir example && cd example && echo ok
 ```
 
-## Process manager
+## Process Manager
 ```shell
   # List process
   ps
@@ -177,4 +177,50 @@
 
   # Kill process
   kill {PROCCESS ID} # The process ID can be obtained from the list of processes ("ps" command)
+```
+
+## Users, Groups and Permissions Manager
+```shell
+  # Create user
+  useradd -m {USER NAME}
+
+  # Modify user
+  usermod
+
+  # Delete user
+  userdel
+
+  # Show users
+  cat /etc/passwd
+
+  # Log in with new user
+  docker exec -it -u {USER NAME} {CONTAINER ID} bash
+
+  # List user goups
+  cat /etc/group
+
+  # View groups of user
+  groups {USER NAME}
+  
+  # Create user group
+  groupadd {GROUP NAME}
+
+  # Modify user group
+  groupmod
+
+  # Delete user group
+  groupdel
+
+  # Add users on group
+  usermod --groups {GROUP NAME} {USER NAME}
+
+  # Permissões
+  # r = Read
+  # w = Write
+  # x = Execute
+
+  # Trocar uma permissão
+  chmod u+{PERMISSION} {GROUP FILE}.txt
+  
+  chmod u+x jhon.txt
 ```

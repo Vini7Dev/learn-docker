@@ -117,4 +117,20 @@
   more {FILE NAME}
 
   more /etc/debconf.conf
+
+  # Concat content of files
+  cat {FILE NAME 1} ... {FILE NAME N} > {FILE NAME WITH CONCATENATIONS}
+
+  echo {TEXT} > {FILE NAME}
+
+  echo hello world > hello.txt
+
+  # Finding word or sentence on the file (regex)
+  grep {TEXT} {FILE NAME 1} ... {FILE NAME N}
+
+  grep hello hello.txt
+  
+  grep hello -i -r . # All of files from current folder
+
+  # See more in https://www.digitalocean.com/community/tutorials/grep-command-in-linux-unix
 ```

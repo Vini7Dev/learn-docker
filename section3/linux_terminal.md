@@ -54,6 +54,29 @@
   cd {FOLDER NAME}
   
   cd ../..
+
+  cd ~ # Go to home dir
+```
+
+#### Create, Edit or Remove Folders and Files
+
+```shell
+  # Create folder (directory)
+  mkdir {FOLDER NAME}
+
+  # Rename or Move directory
+  mv {FOLDER NAME} {NEW FORDER NAME}
+
+  # Create file
+  touch {FILE NAME} {FILE NAME 2} ... {FILE NAME N}
+
+  # Remove file
+  rm {FILE NAME} {FILE NAME 2} ... {FILE NAME N}
+
+  rm example* # Remove everything that starts with "example"
+
+  # Remove directory
+  rm -r {FOLDER NAME}
 ```
 
 ## Basic Commands

@@ -164,3 +164,17 @@
   # Stop if there is an error when executing multiple commands with the "&&" operator
   mkdir example && cd example && echo ok
 ```
+
+## Process manager
+```shell
+  # List process
+  ps
+
+  # Simulate process
+  sleep {SECONDS} &
+
+  sleep 10 &
+
+  # Kill process
+  kill {PROCCESS ID} # The process ID can be obtained from the list of processes ("ps" command)
+```

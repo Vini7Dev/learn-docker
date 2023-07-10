@@ -2,7 +2,7 @@
 
 ```shell
   # BASE
-  docker run -d --name {CONTAINER NAME} {IMAGE NAME}
+  docker run -d -p {PC PORT}:{CONTAINER PORT} --name {CONTAINER NAME} {IMAGE NAME}
 
   # Start container
   docker run {IMAGE NAME}
@@ -12,6 +12,9 @@
 
     # Rename container
     docker run --name {CONTAINER NAME} {IMAGE NAME}
+
+    # With port redirect
+    docker run -p {PC PORT}:{CONTAINER PORT} {IMAGE NAME}
 ```
 
 # Container Logs

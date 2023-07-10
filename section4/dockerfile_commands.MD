@@ -64,10 +64,10 @@
     # docker image tag app:latest app:v1.0.0
 
   # Create Container from Image
-  docker run {IMAGE NAME} -p {CONTAINER PORT}:{PC PORT}
+  docker run {IMAGE NAME} -p {PC PORT}:{CONTAINER PORT}
 
   # Or, on interactive mode
-  docker run -it {IMAGE NAME} -p {CONTAINER PORT}:{PC PORT}
+  docker run -it {IMAGE NAME} -p {PC PORT}:{CONTAINER PORT}
 ```
 
 # Upload Image to Docker Hub

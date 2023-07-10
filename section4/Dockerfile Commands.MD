@@ -13,43 +13,43 @@
 ## Examples
 
 ```Dockerfile
-# FROM
-FROM node:12-alpine
+  # FROM
+  FROM node:12-alpine
 
-# WORKDIR
-WORKDIR /directory
+  # WORKDIR
+  WORKDIR /directory
 
-# COPY
-COPY file1.json file2.json .
+  # COPY
+  COPY file1.json file2.json .
 
-COPY file1.json .
+  COPY file1.json .
 
-COPY *.json .
+  COPY *.json .
 
-COPY . .
+  COPY . .
 
-# ADD
-ADD https://example.com/file1.json .
+  # ADD
+  ADD https://example.com/file1.json .
 
-ADD file.zip .
+  ADD file.zip .
 
-# RUN
-RUN apk add --no-cache python2 g++ make
+  # RUN
+  RUN apk add --no-cache python2 g++ make
 
-RUN yarn install --production
+  RUN yarn install --production
 
-# USER
-RUN addgroup dev_group && adduser -S -G some_user dev_group
-USER some_user
+  # USER
+  RUN addgroup dev_group && adduser -S -G some_user dev_group
+  USER some_user
 
-# ENV
-ENV API_URL=https://example.com
+  # ENV
+  ENV API_URL=https://example.com
 
-# EXPOSE
-EXPOSE 3000
+  # EXPOSE
+  EXPOSE 3000
 
-# CMD
-CMD ["node", "src/index.js"]
+  # CMD
+  CMD ["node", "src/index.js"]
 ```
 
 # Create Image with Tags (Version Control)

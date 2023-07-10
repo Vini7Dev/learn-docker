@@ -1,3 +1,23 @@
+# Docker Compose List and View Logs
+
+```shell
+  # List running docker compose
+  docker-compose ps
+
+  # List all docker compose
+  docker-compose ps -a
+
+  # View docker compose logs
+  docker-compose logs
+    docker-compose logs -h
+
+    docker-compose logs -f
+
+    docker-compose logs -t
+    
+    ...
+```
+
 # Running and Stoping Docker Compose
 
 ```shell

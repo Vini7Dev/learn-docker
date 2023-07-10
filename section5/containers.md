@@ -54,6 +54,8 @@
   docker logs {CONTAINER NAME OR ID}
 
   docker logs {OPTION} {CONTAINER NAME OR ID}
+    docker logs -h
+
     docker logs -f {CONTAINER NAME OR ID}
 
     docker logs -n {LINES COUNT} {CONTAINER NAME OR ID}

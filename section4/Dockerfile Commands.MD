@@ -38,6 +38,10 @@ RUN apk add --no-cache python2 g++ make
 
 RUN yarn install --production
 
+# USER
+RUN addgroup dev_group && adduser -S -G some_user dev_group
+USER some_user
+
 # ENV
 ENV API_URL=https://example.com
 

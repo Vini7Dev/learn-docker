@@ -49,7 +49,7 @@ ENV API_URL=https://example.com
 EXPOSE 3000
 
 # CMD
-CMD ["node", "/src/index.js"]
+CMD ["node", "src/index.js"]
 ```
 
 # Create Image
@@ -59,8 +59,8 @@ CMD ["node", "/src/index.js"]
   docker build -t {IMAGE NAME} . # . = Current directory
 
   # Create Container from Image
-  docker run {IMAGE NAME} 
+  docker run {IMAGE NAME} -p {CONTAINER PORT}:{PC PORT}
 
   # Or, on interactive mode
-  docker run -it {IMAGE NAME}
+  docker run -it {IMAGE NAME} -p {CONTAINER PORT}:{PC PORT}
 ```

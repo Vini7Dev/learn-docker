@@ -32,3 +32,13 @@
 
     docker logs -t {CONTAINER ID}
 ```
+
+# Run Commands on Container
+
+```shell
+  # Run command on container
+  docker exec {CONTAINER ID OR NAME} {COMMAND}
+
+    # Example
+    docker exec {CONTAINER ID OR NAME} ls
+```

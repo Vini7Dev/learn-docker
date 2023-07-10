@@ -36,6 +36,8 @@ ADD file.zip .
 # RUN
 RUN apk add --no-cache python2 g++ make
 
+# ENV
+ENV API_URL=https://example.com
 ```
 
 # Create Image

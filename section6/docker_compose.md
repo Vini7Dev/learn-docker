@@ -1,8 +1,14 @@
-# Execute Docker Compose
+# Running and Stoping Docker Compose
 
 ```shell
-  # Create images and containers in background
+  # [WITH BUILD] Create images and containers in background and start
+  docker-compose up -d --build
+
+  # [BEFORE BUILD] Create images and containers in background
   docker-compose up -d
+
+  # Stopping docker compose
+  docker-compose down
 ```
 
 # Docker Compose YAML (Some keywords)

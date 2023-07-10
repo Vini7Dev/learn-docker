@@ -10,10 +10,10 @@
 **Course Sections:**
 
 * [**2️⃣ Section 2:** About Docker](/section2)
-* [**3️⃣ Section 3:** Linux](/section3)
-* [**4️⃣ Section 4:** Docker Images](/section4)
-* [**5️⃣ Section 5:** Docker Containers](/section5)
-* [**6️⃣ Section 6:** Docker Compose](/section6)
+* [**3️⃣ Section 3:** Linux](/section3/linux_terminal.md)
+* [**4️⃣ Section 4:** Docker Images](/section4/dockerfile_commands.MD)
+* [**5️⃣ Section 5:** Docker Containers](/section5/containers.md)
+* [**6️⃣ Section 6:** Docker Compose](/section6/docker_compose.md)
 
 ## 🤝 Colaboradores
 

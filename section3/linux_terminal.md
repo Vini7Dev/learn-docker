@@ -194,7 +194,7 @@
   cat /etc/passwd
 
   # Log in with new user
-  docker exec -it -u {USER NAME} {CONTAINER ID} bash
+  docker exec -it -u {USER NAME} {CONTAINER NAME OR ID} bash
 
   # List user goups
   cat /etc/group

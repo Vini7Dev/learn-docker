@@ -52,11 +52,16 @@ EXPOSE 3000
 CMD ["node", "src/index.js"]
 ```
 
-# Create Image
+# Create Image with Tags (Version Control)
 
 ```shell
   # Create Image
-  docker build -t {IMAGE NAME} . # . = Current directory
+  docker build -t {IMAGE NAME}:{VERSION TEXT} . # . = Current directory
+    # docker build -t app:v1.0.0 .
+
+  # Rename Image Tag
+  docker image tag {IMAGE NAME}:{IMAGE TAG} {IMAGE NAME}:{NEW IMAGE TAG}
+    # docker image tag app:latest app:v1.0.0
 
   # Create Container from Image
   docker run {IMAGE NAME} -p {CONTAINER PORT}:{PC PORT}

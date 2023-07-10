@@ -69,3 +69,18 @@ CMD ["node", "src/index.js"]
   # Or, on interactive mode
   docker run -it {IMAGE NAME} -p {CONTAINER PORT}:{PC PORT}
 ```
+
+# Upload Image to Docker Hub
+
+> ATT: The image tag must be the same as the repository name
+
+```shell
+  # Make login on docker hub
+  docker login
+
+  # First version upload
+  docker push {REPOSITORY NAME}:{VERSION}
+
+  # Uploading other versions
+  docker push {REPOSITORY NAME}:{OTHER VERSION}
+```

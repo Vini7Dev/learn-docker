@@ -39,10 +39,10 @@
   docker stop {CONTAINER NAME OR ID}
 
   # Remove container
-  docker remove {CONTAINER NAME OR ID}
+  docker rm {CONTAINER NAME OR ID}
   
     # Remove container with "force" option
-    docker remove -f {CONTAINER NAME OR ID}
+    docker rm -f {CONTAINER NAME OR ID}
 ```
 
 # Container Logs
@@ -88,4 +88,20 @@
 
     # Example
     docker run {...} -v {VOLUME NAME}:/app/data
+```
+
+# Copy files from pc to container or from container to pc
+
+```shell
+  # From pc to container
+  docker cp {FILE DIRECTORY} {CONTAINER NAME OR ID}:{DIRECTORY TO SAVE}
+
+    # Example
+    docker cp file.json {CONTAINER NAME OR ID}:/app
+
+  # From container to pc (with container shell open)
+  docker cp {CONTAINER NAME OR ID}:{FILE DIRECTORY} {DIRECTORY TO SAVE}
+
+    # Example
+    docker cp {CONTAINER NAME OR ID}:/app/file.json .
 ```

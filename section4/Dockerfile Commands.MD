@@ -14,7 +14,7 @@
 
 ```Dockerfile
 # FROM
-FROM nodejs:12-alpine
+FROM node:12-alpine
 
 # WORKDIR
 WORKDIR /directory
@@ -32,6 +32,9 @@ COPY . .
 ADD https://example.com/file1.json .
 
 ADD file.zip .
+
+# RUN
+RUN apk add --no-cache python2 g++ make
 
 ```
 

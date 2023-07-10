@@ -1,4 +1,4 @@
-# CONTAINERS
+# Start Container
 
 ```shell
   # BASE
@@ -12,4 +12,20 @@
 
     # Rename container
     docker run --name {CONTAINER NAME} {IMAGE NAME}
+```
+
+# Container Logs
+
+```shell
+  # View container logs
+  docker logs --help
+
+  docker logs {CONTAINER ID}
+
+  docker logs {OPTION} {CONTAINER ID}
+    docker logs -f {CONTAINER ID}
+
+    docker logs -n {LINES COUNT} {CONTAINER ID}
+
+    docker logs -t {CONTAINER ID}
 ```

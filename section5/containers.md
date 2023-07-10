@@ -15,6 +15,12 @@
 
     # With port redirect
     docker run -p {PC PORT}:{CONTAINER PORT} {IMAGE NAME}
+
+    # With volume
+    docker run -v {VOLUME NAME}:{DIRECTORY TO ADD VOLUME}
+    
+      # Example
+      docker run -v {VOLUME NAME}:/app/data
 ```
 
 # List, Start, Stop and Remove Containers
@@ -58,9 +64,28 @@
 # Run Commands on Container
 
 ```shell
+  # Open container with shell
+  docker exec -it {CONTAINER NAME OR ID} sh
+
   # Run command on container
-  docker exec {CONTAINER NAME OR ID OR NAME} {COMMAND}
+  docker exec {CONTAINER NAME OR ID} {COMMAND}
 
     # Example
-    docker exec {CONTAINER NAME OR ID OR NAME} ls
+    docker exec {CONTAINER NAME OR ID} ls
+```
+
+# Working with volumes
+
+```shell
+  # Create volume
+  docker volume create {VOLUME NAME}
+
+  # View volume info
+  docker volume inspect {VOLUME NAME}
+
+  # Associate volume to container
+  docker run {...} -v {VOLUME NAME}:{DIRECTORY TO ADD VOLUME}
+
+    # Example
+    docker run {...} -v {VOLUME NAME}:/app/data
 ```

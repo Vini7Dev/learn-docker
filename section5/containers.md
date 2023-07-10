@@ -17,11 +17,26 @@
     docker run -p {PC PORT}:{CONTAINER PORT} {IMAGE NAME}
 ```
 
-# Start and Stop Containers
+# List, Start, Stop and Remove Containers
 
 ```shell
-  # Start
+  # List containers
+  docker ps
   
+    # Show hidden containers
+    docker ps -a
+
+  # Start container
+  docker start {CONTAINER NAME OR ID}
+  
+  # Stop container
+  docker stop {CONTAINER NAME OR ID}
+
+  # Remove container
+  docker remove {CONTAINER NAME OR ID}
+  
+    # Remove container with "force" option
+    docker remove -f {CONTAINER NAME OR ID}
 ```
 
 # Container Logs
@@ -30,22 +45,22 @@
   # View container logs
   docker logs --help
 
-  docker logs {CONTAINER ID}
+  docker logs {CONTAINER NAME OR ID}
 
-  docker logs {OPTION} {CONTAINER ID}
-    docker logs -f {CONTAINER ID}
+  docker logs {OPTION} {CONTAINER NAME OR ID}
+    docker logs -f {CONTAINER NAME OR ID}
 
-    docker logs -n {LINES COUNT} {CONTAINER ID}
+    docker logs -n {LINES COUNT} {CONTAINER NAME OR ID}
 
-    docker logs -t {CONTAINER ID}
+    docker logs -t {CONTAINER NAME OR ID}
 ```
 
 # Run Commands on Container
 
 ```shell
   # Run command on container
-  docker exec {CONTAINER ID OR NAME} {COMMAND}
+  docker exec {CONTAINER NAME OR ID OR NAME} {COMMAND}
 
     # Example
-    docker exec {CONTAINER ID OR NAME} ls
+    docker exec {CONTAINER NAME OR ID OR NAME} ls
 ```

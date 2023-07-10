@@ -4,11 +4,11 @@
 > WORKDIR: Set a default directory of image for the next commands (/app, ...)
 > COPY: Copy all files from application to Docker Image
 > ADD: Copy files from internet or zip folders to Docker Image
-> RUN: To start the application
 > ENV: Set environment settings
-> EXPOSE: Expose an application port for access
+> EXPOSE: Expose an container port for access
 > USER: Who is the user who will run the application
-> CMD / ENTRYPOINT: Run commands
+> RUN: To start the application (During image construction)
+> CMD / ENTRYPOINT: Run commands (During image initialization)
 
 ## Examples
 
@@ -36,8 +36,16 @@ ADD file.zip .
 # RUN
 RUN apk add --no-cache python2 g++ make
 
+RUN yarn install --production
+
 # ENV
 ENV API_URL=https://example.com
+
+# EXPOSE
+EXPOSE 3000
+
+# CMD
+CMD ["node", "/src/index.js"]
 ```
 
 # Create Image

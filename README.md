@@ -15,7 +15,7 @@
 * [**5️⃣ Section 5:** Docker Containers](/section5/containers.md)
 * [**6️⃣ Section 6:** Docker Compose](/section6/docker_compose.md)
 
-## 🤝 Colaboradores
+## 🤝 Collaborators
 
 <table>
   <tr>
